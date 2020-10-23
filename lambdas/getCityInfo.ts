@@ -49,12 +49,12 @@ const apiResponses = {
             body: JSON.stringify(body, null, 2),
         };
     }
-},
+};
 
 export const handler: APIGatewayProxyHandler = async (event, _context) => {
     const city = event.pathParameters?.city
 
-    if (!city || cities[city]) {
+    if (!city || !cities[city]) {
         return apiResponses._400({message: 'City not found!'})
     }
 
