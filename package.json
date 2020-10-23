@@ -4,7 +4,7 @@
   "description": "Serverless webpack example using Typescript",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "serverless offline start --skipCacheInvalidation"
   },
   "dependencies": {
     "serverless-http": "^2.6.0",
